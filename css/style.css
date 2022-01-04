@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(21, 146, 255);
+    padding: 5px;
+}
+header>nav{
+    width: 50%;
+    margin: auto;
+}
+header>nav>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+header>nav>ul>li>a::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    transition: 0.5s;
+    background-color: rgb(255, 187, 0);
+}
+header>nav>ul>li>a:hover::before{
+    width: 100%;
+}
+#sec1{
+    width: 100%;
+    position: relative;
+}
+.w-45{
+    width: 45%;
+    
+}
+.d-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.img1{
+    position: absolute;
+
+}
+.circle1{
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(orange,tomato);
+    margin-top: 20px;
+    animation: ani1 1s infinite;
+  
+}
+.circle2{
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(rgb(0, 183, 255),tomato);
+    margin-top: 20px;
+    
+  
+}
+.active{
+    color: orange;
+}
+@keyframes ani1{
+    from{
+        background-image: linear-gradient(orange,tomato);
+    }
+    to{
+        background-image: linear-gradient(tomato,orange);
+    }
+}
+.about{
+    width: 80%;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.623);
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+.about::before{
+    content: '';
+    width: 250px;
+    height: 250px;
+    background-color: rgb(195, 222, 248);
+    position: absolute;
+    z-index:-1;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+.about::after{
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-color: rgba(101, 212, 231, 0.815);
+    position: absolute;
+    z-index:-1;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+}
+.about h1{
+    margin-bottom: 5px;
+}
+.about p{
+    text-align: justify;
+    padding: 5px;
+}
+.btn{
+    color: white;
+    background-color: dodgerblue;
+    height: 40px;
+    width: 150px;
+    border: none;
+    padding:5px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#sec2{
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.card{
+    width: 300px;
+    background-color: whitesmoke;
+    padding: 20px 5px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    
+}
+.card p{
+    text-align: justify;
+    font-size: 15px;
+    padding: 2px 3px;
+    margin-bottom: 15px;
+}
+.card a{
+  
+    text-decoration: none;
+    background-color: yellowgreen;
+    color: white;
+    padding: 10px 35px;
+    
+}
+footer{
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+    text-align: center;
+    background-color: dimgrey;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
